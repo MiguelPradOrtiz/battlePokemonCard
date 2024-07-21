@@ -1,0 +1,138 @@
+.field{
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.handDeck {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.handDeck .up{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.handDeck .bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 87, 185);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card-hand-pokemon{
+    padding: 10px 0;
+    display: flex;
+}
+
+.info-pokemon{
+    cursor: pointer;
+    height: 250px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.arriba{
+    position: relative;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    background-color: green;
+    border: 1px solid #000;
+}
+
+.abajo{
+    bottom: 0;
+    position: relative;
+    transition: bottom 0.2s ease-in-out;
+    background-color: #ff0000;
+    border: 1px solid #000;
+}
+
+.arriba:hover{
+    position: relative;
+    top: 70px;
+}
+
+.abajo:hover{
+    position: relative;
+    bottom: 70px;
+}
+
+.battle-actions{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.btn-fight{
+    margin-top: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.battle-selected{
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    gap: 30px;
+}
+
+.selected-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 250px;
+    width: 150px;
+    cursor: pointer;
+    border: 1px solid #000;
+
+}
+
+.up{
+    background-color: green;
+}
+
+.bottom{
+    background-color: rgb(252, 0, 0);
+}
+
+.battle-result{
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
